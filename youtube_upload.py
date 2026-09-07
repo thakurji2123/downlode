@@ -7,30 +7,45 @@ from googleapiclient.http import MediaFileUpload
 VIDEO_FILE = "Final_Long_Educational_Video.mp4"
 CATEGORY_ID = "24" 
 
-TITLES = [
-    "Zindagi Ki Sabse Badi Seekh 😔 | Hindi Stories",
-    "Ek Kahani Jo Aapko Sochne Par Majboor Kar Degi 💡",
-    "Aisa Kisi Ke Sath Na Ho 😭 | Emotional Lesson",
-    "Sacche Pyaar Ki Kahani ❤️ | Heart Touching Story"
-]
+# ==========================================
+# 🎲 DYNAMIC UNIQUE TITLE/DESC GENERATOR
+# ==========================================
 
-DESCRIPTIONS = [
-    "Dosto, aaj ki yeh kahani bohot seekh dene wali hai. Agar video pasand aaye to channel ko subscribe zaroor karein.\n\n#Story #Emotional #HeartTouching",
-    "Kuch kahaniyan seedha dil par lagti hain. Yeh video unhi mein se ek hai.\n\nLike aur Subscribe zaroor karein!\n\n#HindiStories #LifeLesson",
-]
+def generate_unique_metadata():
+    # In tukdon ko jod kar title banega (Taaki kabhi copy/duplicate na ho)
+    hooks = ["Rula dene wali kahani", "Dil chhu lene wali baat", "Zindagi ki sachai", "Ek sachi seekh", "Aisa kisi ke sath na ho", "Rongte khade kar dene wali story"]
+    topics = ["Pyaar ka dard", "Rishton ki ehmiyat", "Akelepan ka safar", "Maa Baap ka pyaar", "Dhoka aur vishwas", "Kismat ka khel"]
+    emojis = ["💔", "🥺", "😭", "❤️", "✨", "🙏", "😔"]
 
-TAG_SETS = [
-    ["Story", "Emotional Story", "Heart Touching", "Hindi", "Life Lesson"],
-    ["Hindi Stories", "Moral Story", "Rula dene wali kahani", "Motivation"],
-]
+    # Generate Unique Title: "Rula dene wali kahani - Pyaar ka dard 💔"
+    unique_title = f"{random.choice(hooks)} - {random.choice(topics)} {random.choice(emojis)}"
+
+    # Generate Unique Description
+    desc_intros = [
+        "Agar aapne ye video nahi dekhi, toh bohot kuch miss kar doge.", 
+        "Dosto is kahani ko sunkar aapke bhi aansu aa jayenge.", 
+        "Zindagi me kabhi kabhi aisi seekh milti hai jo humesha yaad rehti hai.",
+        "Kahaani jo aapke dil ko chhu jayegi, end tak zaroor dekhna."
+    ]
+    desc_ctas = [
+        "\n\nVideo pasand aaye toh Like aur Subscribe zaroor karein! 🙏", 
+        "\n\nApne dosto ke sath is seekh ko share karein aur Channel ko subscribe karna na bhoolein! ❤️"
+    ]
+    tags = "\n\n#EmotionalStory #HindiStories #LifeLessons #Trending #HeartTouching #SadStory"
+
+    unique_description = f"{random.choice(desc_intros)} {random.choice(desc_ctas)} {tags}"
+    
+    return unique_title, unique_description
 
 def upload_video():
     if not os.path.exists(VIDEO_FILE):
+        print(f"❌ Error: {VIDEO_FILE} not found!")
         return
 
-    selected_title = random.choice(TITLES)
-    selected_desc = random.choice(DESCRIPTIONS)
-    selected_tags = random.choice(TAG_SETS)
+    # Random Function call kiya
+    selected_title, selected_desc = generate_unique_metadata()
+
+    print(f"📌 FINAL TITLE: {selected_title}")
     
     creds = Credentials.from_authorized_user_file('token.json', ['https://www.googleapis.com/auth/youtube.upload'])
     youtube = googleapiclient.discovery.build("youtube", "v3", credentials=creds)
@@ -40,7 +55,8 @@ def upload_video():
             "categoryId": CATEGORY_ID,
             "title": selected_title,
             "description": selected_desc,
-            "tags": selected_tags
+            # Tags ko array me convert kiya
+            "tags": ["Hindi Stories", "Emotional", "Moral Story", "Trending", "Life Lesson"]
         },
         "status": {
             "privacyStatus": "public", 
