@@ -1,398 +1,200 @@
 1. Same young man standing outside an abandoned mansion at midnight, broken windows, dead trees, thick fog, pale moonlight, eerie cinematic lighting | Raat ke 2 baje, Aarav ko ek aisa ghar mila jiska naam usne kabhi pehle nahi suna tha.
-
 2. Same young man staring at the rusty gate of the mansion, gate slightly open by itself, dense fog covering the ground, dark forest behind, realistic horror atmosphere | Gate pe tala nahi tha... lekin woh khud dheere-dheere khul raha tha.
-
 3. Same young man entering the abandoned mansion, old wooden door behind him, dusty hallway, faint moonlight, strange shadows, cinematic realism | Jaise hi Aarav andar gaya, darwaza apne aap band ho gaya.
-
 4. Same young man looking back at the closed door, dark hallway stretching ahead, broken paintings on walls, flickering candlelight, unsettling atmosphere | Usne door kholne ki koshish ki... par handle bilkul jam tha.
-
 5. Same young man walking through a dusty corridor, antique portraits watching from walls, long shadows, dim blue lighting, realistic cinematic horror | Corridor ke dono taraf lagi paintings mein sabki aankhein uski taraf dekh rahi thi.
-
 6. Same young man stopping before an old portrait, mysterious woman painted inside, her eyes appearing slightly different, candle flickering nearby, eerie realism | Aarav ne portrait ko dekha... aur usse laga jaise painting ki aankhon ne blink kiya.
-
 7. Same young man stepping backward from the portrait, shocked expression, dark corridor behind him, portrait glowing faintly, cinematic horror lighting | Woh peeche hata... aur portrait ke andar woh aurat ab muskura rahi thi.
-
 8. Same young man running toward a staircase, dusty wooden steps, shadowy upper floor, broken chandelier above, fog creeping through hallway | Aarav ne decide kiya ki upar jaane se pehle exit dhoondhna zaroori hai.
-
 9. Same young man climbing an old staircase, flashlight in hand, darkness surrounding him, mysterious shadow visible behind the railing, cinematic realistic horror | Har step ke saath usse kisi ke chalne ki awaaz sunai de rahi thi.
-
 10. Same young man suddenly turning around on staircase, empty steps behind him, flashlight illuminating dust particles, terrifying silence | Lekin jab usne peeche dekha... wahan koi nahi tha.
-
 11. Same young man reaching the upper hallway, several locked doors, flickering wall lamps, thick darkness at the far end, cinematic horror realism | Upar ek lambi hallway thi... aur har door par alag number likha tha.
-
 12. Same young man examining door number 13, old brass handle, strange scratches around the frame, dim blue light, eerie atmosphere | Sabse ajeeb baat ye thi... building mein 13 number ka koi room hona hi nahi chahiye tha.
-
 13. Same young man touching the handle of room 13, expression nervous, dark hallway, faint mist around his feet, realistic cinematic lighting | Jaise hi usne handle chhua, andar se kisi ne dheere se kaha... “Aarav.”
-
 14. Same young man frozen outside room 13, eyes wide, flashlight trembling, closed door, deep darkness around him, cinematic horror | Uska naam andar se kisne liya tha... jab ghar mein woh akela tha?
-
 15. Same young man slowly opening room 13, dusty bedroom, old wooden chair facing a covered mirror, pale moonlight through curtains, eerie realism | Room ke andar sirf ek kursi thi... jo seedha ek covered mirror ki taraf rakhi thi.
-
 16. Same young man entering room 13, staring at covered mirror, old chair moving slightly, dusty floor, dark cinematic atmosphere | Aarav ne mirror ke paas jaana avoid kiya... lekin kursi dheere se hilne lagi.
-
 17. Same young man standing beside the covered mirror, hand reaching toward dusty cloth, dim moonlight, tense cinematic horror composition | Uske andar ek ajeeb curiosity thi... usse jaana tha mirror ke peeche kya hai.
-
 18. Same young man pulling the cloth from an antique mirror, reflection showing the room, dark atmosphere, realistic horror lighting | Mirror mein room dikh raha tha... lekin Aarav khud usmein nahi tha.
-
 19. Same young man staring at the mirror in shock, empty reflection where he should be, candlelight flickering, eerie cinematic realism | Aarav ne apne peeche dekha... phir mirror mein dekha... dono jagah kuch alag tha.
-
 20. Same young man looking at mirror as a dark silhouette appears behind his reflected position, real room empty, moonlight, cinematic horror | Mirror mein uske bilkul peeche ek parchai khadi thi.
-
 21. Same young man turning around quickly, empty room behind him, open doorway, cold blue light, tense realistic horror | Aarav turant palta... lekin room mein koi nahi tha.
-
 22. Same young man staring back into mirror, dark silhouette now closer in reflection, his face terrified, cinematic shadows | Jab usne dobara mirror dekha... woh parchai aur paas aa chuki thi.
-
 23. Same young man covering the mirror with cloth again, breathing nervously, antique bedroom, dim light, realistic cinematic horror | Usne mirror ko turant dhak diya aur room se bahar nikal gaya.
-
 24. Same young man walking quickly through the upper hallway, room doors slowly opening behind him, dark shadows, cinematic horror lighting | Lekin uske peeche ek-ek karke saare doors khulne lage.
-
 25. Same young man running down the staircase, flashlight bouncing, dark mansion interior, fog, dramatic cinematic motion | Aarav seedha neeche bhaaga... usse sirf ek cheez chahiye thi—exit.
-
 26. Same young man reaching the main door, grabbing the handle desperately, dusty entrance hall, moonlight through windows | Usne main door khola... lekin bahar ghar ka corridor tha.
-
 27. Same young man standing confused before another identical hallway outside the entrance, impossible architecture, fog, eerie cinematic realism | Jo bahar hona chahiye tha... wahan bhi wahi hallway thi.
-
 28. Same young man walking through the impossible corridor, identical doors repeating endlessly, flashlight beam, dark atmosphere | Aarav samajh gaya ki woh sirf ghar mein nahi... kisi aur cheez ke andar phans chuka tha.
-
 29. Same young man discovering an old wall clock, clock showing 2:13 AM, dusty hallway, flickering light, cinematic horror | Wall clock ab bhi 2:13 par ruki thi... bilkul usi waqt jab woh ghar mein aaya tha.
-
 30. Same young man staring at clock as its hands suddenly move backward, eerie shadows, realistic cinematic horror | Phir clock ki sui aage nahi... peeche chalne lagi.
-
 31. Same young man hearing a child's distant laughter, standing in dark corridor, flashlight pointed toward empty hallway, foggy atmosphere | Door se ek bachche ki hansi sunai di... lekin ghar mein bachcha kaise ho sakta tha?
-
 32. Same young man following the distant sound, narrow corridor, old toys scattered on floor, dim moonlight, cinematic realism | Hansi ek purane room se aa rahi thi.
-
 33. Same young man opening an old nursery door, dusty toys, wooden rocking horse moving alone, dark curtains, eerie lighting | Room khaali tha... sirf ek rocking horse apne aap hil raha tha.
-
 34. Same young man staring at rocking horse, flashlight beam, dusty nursery, long shadows, cinematic horror | Aarav ne horse ko dekha... aur uski movement dheere-dheere ruk gayi.
-
 35. Same young man standing silently as rocking horse suddenly faces him, dark nursery, moonlight, realistic horror composition | Phir rocking horse uski taraf ghoom gaya.
-
 36. Same young man backing away from the rocking horse, frightened expression, nursery door behind him, deep shadows | Aarav ne peeche hatna shuru kiya... tabhi kisi ne uske kandhe ko touch kiya.
-
 37. Same young man turning around suddenly, empty doorway behind him, dark nursery, flashlight beam, tense cinematic realism | Woh turant palta... aur wahan sirf khaali doorway tha.
-
 38. Same young man leaving nursery quickly, looking back, long hallway, doors closed, cold blue lighting | Usne room chhoda aur hallway mein daudne laga.
-
 39. Same young man finding an old telephone on a wooden table, dusty hallway, phone ringing, eerie darkness, cinematic realism | Tab ek purana telephone ring karne laga.
-
 40. Same young man picking up the old telephone, shocked expression, dark hallway, faint fog, cinematic horror lighting | Phone uthate hi doosri taraf se uski khud ki awaaz aayi.
-
 41. Same young man listening to telephone in disbelief, shadowy hallway, receiver near ear, dramatic lighting | Awaaz keh rahi thi... “Aarav, ghar se bahar mat jaana.”
-
 42. Same young man staring at telephone receiver, confused and frightened, old table, flickering light, realistic cinematic horror | Lekin Aarav ko sabse zyada dar is baat se laga... ki awaaz bilkul uski thi.
-
 43. Same young man slowly placing phone down, dark hallway, telephone cord stretching unnaturally toward a closed door | Phone rakhne ke baad cord ek band room ki taraf kheenchne laga.
-
 44. Same young man following the telephone cord, narrow hallway, dark door ahead, flashlight, cinematic horror atmosphere | Cord usse ghar ke sabse purane room tak le gaya.
-
 45. Same young man opening an ancient study room, old books, dusty desk, photographs, dim lamp, realistic horror | Study ke andar purani photographs ka ek bada collection tha.
-
 46. Same young man examining old photographs on the wall, dusty frames, strange family portraits, candlelight, cinematic realism | Har photograph mein wahi mansion tha... lekin dates alag-alag thi.
-
 47. Same young man discovering a photograph of the mansion from decades ago, mysterious young man resembling him standing outside, eerie lighting | Phir Aarav ne ek photo dekhi... jisme ek aadmi bilkul us jaisa dikh raha tha.
-
 48. Same young man holding the old photograph, shocked face, dark study room, candlelight, cinematic horror | Photo ke neeche sirf ek date likhi thi... exactly 30 years pehle ki.
-
 49. Same young man comparing his face with the old photograph, antique mirror nearby, dim light, eerie cinematic realism | Uska chehra dekhkar Aarav ke haath kaanpne lage.
-
 50. Same young man discovering an old diary on the desk, dusty leather cover, candlelight, dark study, realistic cinematic horror | Diary kholte hi pehli line thi... “Agar tum ye padh rahe ho, toh tum bhi yahan aa chuke ho.”
-
 51. Same young man reading the mysterious diary, old study, flickering lamp, tense expression, cinematic realism | Diary kisi aur Aarav ki thi.
-
 52. Same young man turning diary pages quickly, handwritten warnings, dusty desk, dark shadows, eerie atmosphere | Us diary mein likha tha ki mansion har 30 saal mein ek insaan ko bulata hai.
-
 53. Same young man staring at diary in fear, old clock behind him, moonlight, cinematic horror | Aur is baar... woh insaan Aarav tha.
-
 54. Same young man reading another diary page, trembling hands, candlelight, dark study | Last page par likha tha... “Mirror ko kabhi mat dekhna jab clock 2:13 ho.”
-
 55. Same young man looking toward the antique mirror across the study, covered in dust, dark room, cinematic lighting | Aarav ne dheere se clock ki taraf dekha.
-
 56. Same young man staring at the old clock showing exactly 2:13 AM, frozen expression, dark study, eerie cinematic realism | Clock phir 2:13 par aa chuki thi.
-
 57. Same young man standing frozen as the covered mirror begins vibrating slightly, dark study, flickering candle, realistic horror | Mirror ke peeche se halki tapping ki awaaz aane lagi.
-
 58. Same young man stepping backward from the mirror, tense expression, old bookshelves, shadows moving, cinematic horror | Tap... tap... tap... awaaz dheere-dheere tez hone lagi.
-
 59. Same young man staring at mirror as the cloth slowly falls to the floor, eerie reflection, moonlight, cinematic realism | Aur phir mirror se kapda khud neeche gir gaya.
-
 60. Same young man facing the uncovered mirror, reflection showing an empty room, cold blue lighting, realistic horror | Mirror mein room tha... lekin Aarav phir bhi nahi tha.
-
 61. Same young man looking confused at the mirror, dark reflection changing behind him, cinematic horror lighting | Is baar reflection mein ek aur Aarav khada tha.
-
 62. Same young man staring at his identical reflection, reflection smiling unnaturally, dark study, cinematic realism | Mirror wala Aarav dheere se muskura raha tha.
-
 63. Same young man backing away while his reflection remains still, eerie mirror, dark room, dramatic shadows | Real Aarav peeche ja raha tha... par reflection wahi khada tha.
-
 64. Same young man watching reflection raise its hand independently, shocked expression, antique mirror, cinematic horror | Phir mirror wale Aarav ne haath uthaya... bina uske.
-
 65. Same young man running out of study, dark hallway, flashlight, doors appearing endless, cinematic motion | Aarav study se bhaaga aur seedha staircase ki taraf gaya.
-
 66. Same young man reaching the staircase, suddenly seeing his reflection on every window, dark mansion, moonlight | Lekin ab har window mein uska reflection dikh raha tha.
-
 67. Same young man running downstairs as reflections follow along windows, foggy mansion, dramatic cinematic horror | Jahan bhi woh dekhta... reflection usse follow kar raha tha.
-
 68. Same young man reaching the main entrance again, old door visible, hopeful expression, dim moonlight | Finally usse main door dobara mil gaya.
-
 69. Same young man opening the main door, seeing a bright sunrise outside instead of darkness, cinematic contrast | Is baar bahar sach mein rasta tha.
-
 70. Same young man stepping outside the mansion, turning back toward the house, fog surrounding it, eerie sunrise | Aarav bahar aa gaya... lekin usse ek cheez ajeeb lagi.
-
 71. Same young man looking at the mansion, realizing every window is completely dark, misty morning, cinematic realism | Mansion ke saare windows band the... jaise wahan kabhi light jali hi na ho.
-
 72. Same young man checking his phone outside, screen showing no signal and strange time, foggy road, cinematic horror | Usne phone dekha... aur time ab bhi 2:13 tha.
-
 73. Same young man walking away from mansion through foggy forest road, looking back nervously, cinematic atmosphere | Woh road par chalne laga... lekin usse lag raha tha koi peeche aa raha hai.
-
 74. Same young man stopping on forest road and looking back, empty path, fog, pale morning light, realistic horror | Peeche koi nahi tha.
-
 75. Same young man continuing down road, faint silhouette of mansion visible between trees, eerie atmosphere | Phir usne door se mansion ko dobara dekha.
-
 76. Same young man staring at distant mansion, shocked expression, impossible perspective, foggy forest, cinematic horror | Mansion wahan nahi hona chahiye tha... kyunki woh usse bahut door aa chuka tha.
-
 77. Same young man looking at his phone as a new photograph appears in gallery, dark mysterious image, foggy road | Phone ki gallery mein ek nayi photo aa gayi.
-
 78. Same young man examining phone photograph showing himself standing inside room 13, shocked, forest background, cinematic realism | Photo mein Aarav abhi bhi room 13 ke andar khada tha.
-
 79. Same young man staring at phone, trembling expression, fog surrounding him, eerie cinematic lighting | Usne photo delete ki... lekin photo phir wapas aa gayi.
-
 80. Same young man hearing a distant telephone ringing from the forest, looking around nervously, foggy trees, cinematic horror | Tab jungle ke andar se telephone ring hone laga.
-
 81. Same young man walking toward the ringing sound, flashlight in hand, dense fog, dark trees, realistic cinematic horror | Aarav ko pata tha ki usse wahan nahi jaana chahiye.
-
 82. Same young man discovering an old telephone booth in the middle of forest, mysterious light, fog, eerie atmosphere | Lekin phir bhi woh awaaz ke peeche chala gaya.
-
 83. Same young man standing before an old telephone booth, receiver ringing, abandoned forest, cinematic horror lighting | Booth ke andar wahi purana telephone tha.
-
 84. Same young man staring at ringing telephone, afraid to answer, thick fog, dark forest, realistic cinematic | Phone lagataar baj raha tha... jaise uska wait kar raha ho.
-
 85. Same young man slowly picking up telephone receiver, tense expression, foggy forest, cinematic horror | Aarav ne finally phone utha liya.
-
 86. Same young man listening to telephone, eyes widening, dark forest behind him, dramatic lighting | Doosri taraf se sirf ek line boli gayi... “Tum ghar se bahar nahi nikle.”
-
 87. Same young man turning around slowly, dense fog, empty forest path, eerie silence, cinematic realism | Aarav ne turant peeche dekha.
-
 88. Same young man seeing the abandoned mansion suddenly standing behind him, huge dark windows, fog, pale moonlight | Uske peeche wahi mansion khada tha.
-
 89. Same young man standing frozen before the mansion, telephone still in his hand, impossible forest, cinematic horror | Aur sabse daravni baat... main door khula hua tha.
-
 90. Same young man looking at open mansion door, deep darkness inside, fog flowing outward, realistic cinematic horror | Andar se wahi awaaz aayi... “Aarav, ghar aa jao.”
-
 91. Same young man stepping backward from mansion, terrified expression, dark doorway, foggy forest, cinematic realism | Is baar Aarav ne decide kiya ki woh andar nahi jayega.
-
 92. Same young man running through the forest away from mansion, dense fog, flashlight, dramatic cinematic motion | Woh poori jaan laga kar jungle se bhaaga.
-
 93. Same young man reaching a bright road at dawn, exhausted, fog behind him, cinematic realistic atmosphere | Kuch der baad usse ek normal road mil gaya.
-
 94. Same young man sitting beside the road at sunrise, breathing heavily, phone in hand, peaceful landscape, cinematic realism | Aarav ko laga ki nightmare finally khatam ho gaya.
-
 95. Same young man looking at his phone, mysterious new notification appearing, sunrise behind him, cinematic horror | Tab phone par ek notification aaya.
-
 96. Same young man staring at phone screen showing a new message from an unknown number, eerie morning light | Message mein sirf likha tha... “Room 14 abhi bhi khaali hai.”
-
 97. Same young man looking toward the distant fog with fear, empty road, sunrise, cinematic horror atmosphere | Aarav ne phone band kar diya... lekin uske saamne fog mein ek ghar dikh raha tha.
-
 98. Same young man staring at a second abandoned mansion hidden in fog, dark windows, sunrise, eerie cinematic realism | Woh wahi mansion nahi tha... ye usse bhi purana tha.
-
 99. Same young man standing frozen on the road, distant mansion door slowly opening, fog swirling, cinematic horror lighting | Aur door ke upar ek number likha tha... 14.
-
 100. Same young man staring at the mysterious mansion, same face and appearance, dark doorway, endless fog, dramatic cinematic ending | Aarav samajh gaya... pehla ghar sirf beginning tha, asli horror ab shuru hone wala tha.
 101. Same Aarav standing before mansion number 14, thick fog, black windows, open doorway, pale moonlight, cinematic horror | Aarav ko samajh nahi aa raha tha... ye ghar uska peecha kyun kar raha tha?
-
 102. Same Aarav slowly approaching the open door of mansion 14, flashlight in hand, fog around his feet, dark interior | Usne andar jaana nahi chaha... lekin uske pair khud aage badhne lage.
-
 103. Same Aarav standing inside mansion 14, huge empty hall, dusty furniture, broken chandelier, deep shadows, cinematic realism | Andar sab kuch purane ghar jaisa tha... bas ek cheez missing thi—awaaz.
-
 104. Same Aarav looking around the silent hall, flashlight illuminating dusty walls, dark staircase, eerie atmosphere | Itni khamoshi thi ki Aarav ko apni heartbeat bhi sunai de rahi thi.
-
 105. Same Aarav noticing fourteen identical doors across the hallway, dim lights, fog, realistic horror | Har door par number tha... 1 se lekar 14 tak.
-
 106. Same Aarav staring at door number 14, old brass handle, scratches around it, dark hallway | Lekin 14 number ka door andar se lock tha.
-
 107. Same Aarav touching door 14, mysterious cold mist around his hand, dark corridor, cinematic lighting | Jaise hi usne door chhua... andar se kisi ne knock kiya.
-
 108. Same Aarav stepping backward from door 14, shocked expression, flashlight shaking, eerie darkness | Knock teen baar hua... phir bilkul silence.
-
 109. Same Aarav walking toward a dusty living room, old furniture covered in white sheets, moonlight, cinematic horror | Aarav ne socha shayad koi aur exit mil jaaye.
-
 110. Same Aarav discovering an old family photograph on a table, dusty frame, dim lamp, mysterious faces | Table par ek family photo rakhi thi... aur usmein ek chehra Aarav jaisa tha.
-
 111. Same Aarav holding the family photograph, shocked expression, dark room, cinematic realism | Photo mein date aaj se exactly 60 saal purani thi.
-
 112. Same Aarav examining the mysterious photograph closely, old mansion visible behind figures, eerie lighting | Aur photo ke peeche wahi mansion number 14 bana hua tha.
-
 113. Same Aarav turning the photograph over, handwritten message on back, candlelight, tense atmosphere | Peeche sirf ek sentence tha... “Har ghar apna ek mehmaan chunta hai.”
-
 114. Same Aarav staring at the message, dark room, flashlight beam, fog near floor | Aarav ko laga jaise kisi ne usse pehle bhi yahan bulaya tha.
-
 115. Same Aarav hearing footsteps upstairs, looking toward dark staircase, cinematic horror | Tab upar se footsteps sunai diye.
-
 116. Same Aarav slowly climbing staircase, flashlight ahead, dark walls, long shadows, realistic cinematic horror | Footsteps uske saath-saath chal rahe the.
-
 117. Same Aarav stopping halfway on staircase, looking upward, empty landing, flickering light | Woh ruk gaya... footsteps bhi ruk gaye.
-
 118. Same Aarav taking another step, dark landing ahead, flashlight beam, tense cinematic scene | Jaise hi Aarav ne ek step aur liya... footsteps phir shuru ho gaye.
-
 119. Same Aarav reaching upper floor, long corridor, doors slightly open, thick fog, cinematic realism | Upar ki hallway mein saare doors khule hue the.
-
 120. Same Aarav staring into the first room, old bedroom, rocking chair moving slowly, moonlight | Room ke andar ek chair khud hi hil rahi thi.
-
 121. Same Aarav entering the bedroom cautiously, dusty bed, old mirror, curtains moving without wind | Aarav ne window dekhi... lekin window completely closed thi.
-
 122. Same Aarav looking at curtains moving by themselves, dark bedroom, cold blue lighting | Phir usne notice kiya... room mein hawa bilkul nahi thi.
-
 123. Same Aarav approaching the old mirror, flashlight reflecting across glass, eerie darkness | Mirror mein Aarav ka reflection tha... lekin uska reflection smile kar raha tha.
-
 124. Same Aarav staring at his reflection, real face frightened while reflection smiles, cinematic horror | Aarav ne smile nahi ki thi.
-
 125. Same Aarav stepping backward from mirror, reflection remaining close, dark room, cinematic realism | Reflection uske saath move nahi hua.
-
 126. Same Aarav running out of bedroom, dark hallway, flashlight, fog, dramatic motion | Aarav room se bhaag gaya.
-
 127. Same Aarav running down upper corridor, doors closing one by one behind him, eerie cinematic lighting | Uske peeche ek-ek karke saare doors band hone lage.
-
 128. Same Aarav reaching staircase, looking down into dark hall, strange silhouette at bottom | Neeche staircase ke paas ek parchai khadi thi.
-
 129. Same Aarav freezing on staircase, silhouette far below, flashlight pointed downward, dark mansion | Aarav ne flashlight us par daali... par wahan koi nahi tha.
-
 130. Same Aarav descending staircase cautiously, empty hall, flickering chandelier, foggy atmosphere | Lekin jab woh neeche aaya... front door gayab tha.
-
 131. Same Aarav standing in empty entrance hall, staring at blank wall where door was, cinematic horror | Jahan door tha... wahan ab sirf wall thi.
-
 132. Same Aarav touching the wall desperately, dusty surface, dark hall, tense expression | Usne wall ko push kiya... par kuch nahi hua.
-
 133. Same Aarav hearing his own voice from behind, dark mansion, shocked expression | Tab peeche se uski apni awaaz aayi... “Aarav.”
-
 134. Same Aarav slowly turning around, empty hallway, dim light, cinematic horror | Woh palta... aur saamne koi nahi tha.
-
 135. Same Aarav noticing wet footprints appearing across dusty floor, leading toward basement stairs, eerie lighting | Floor par naye footprints the... jo basement ki taraf ja rahe the.
-
 136. Same Aarav following the footprints toward basement stairs, flashlight, thick darkness, cinematic realism | Footprints bilkul fresh the.
-
 137. Same Aarav standing at basement entrance, old wooden stairs descending into darkness, fog | Basement se thandi hawa aa rahi thi.
-
 138. Same Aarav slowly descending basement stairs, flashlight illuminating stone walls, dark atmosphere | Aarav jaanta tha ki basement jaana dangerous tha... phir bhi woh neeche gaya.
-
 139. Same Aarav entering dark basement, old boxes, pipes, dusty floor, cinematic horror lighting | Basement mein dozens of old boxes rakhe the.
-
 140. Same Aarav opening a wooden box, finding dozens of photographs, dim flashlight, eerie atmosphere | Har box mein photographs thi.
-
 141. Same Aarav examining photographs of different people, old mansion backgrounds, cinematic realism | Har photo mein alag insaan tha... lekin sabke peeche wahi mansion tha.
-
 142. Same Aarav discovering a photograph of himself, shocked expression, basement darkness | Phir usse apni photo mili.
-
 143. Same Aarav holding a recent photograph showing himself outside mansion 14, flashlight, cinematic horror | Photo mein woh wahi khada tha... jahan woh abhi khada tha.
-
 144. Same Aarav looking around basement in fear, photograph in hand, deep shadows | Photo ke neeche date kal ki thi.
-
 145. Same Aarav dropping the photograph, frightened expression, dark basement, cinematic lighting | Aarav ka dimaag samajh nahi paa raha tha... future ki photo kaise ho sakti hai?
-
 146. Same Aarav hearing a door slam upstairs, looking toward basement stairs, tense atmosphere | Upar kisi ne main door zor se band kiya.
-
 147. Same Aarav running toward basement stairs, flashlight, dark corridor, cinematic motion | Aarav turant stairs ki taraf bhaaga.
-
 148. Same Aarav reaching staircase, seeing a shadow standing at top, fog, eerie lighting | Stairs ke top par ek insaan khada tha.
-
 149. Same Aarav staring at distant shadow, dark figure wearing similar jacket, cinematic horror | Sabse scary baat... us figure ne bhi Aarav jaisi jacket pehni thi.
-
 150. Same Aarav standing frozen as the shadow slowly turns, dark mansion, flashlight beam | Figure ne dheere se apna face uski taraf kiya.
-
 151. Same Aarav staring at a mysterious man with an identical face, dark hallway, cinematic horror | Woh chehra... Aarav ka hi tha.
-
 152. Same Aarav facing his identical double across the basement stairs, tense cinematic composition | Dono ek dusre ko dekh rahe the... bina ek word bole.
-
 153. Same Aarav backing away while his double remains still, dark mansion, eerie fog | Phir duplicate Aarav ne sirf ek baat boli... “Tum late ho.”
-
 154. Same Aarav looking terrified at his double, staircase behind, dim lighting | Aarav ne poocha... “Tum kaun ho?”
-
 155. Same Aarav facing his mysterious double, identical face, dark jacket, cinematic horror | Double ne kaha... “Main woh hoon jo tum banoge.”
-
 156. Same Aarav staring at his double in disbelief, dark basement, dramatic lighting | Aarav ko samajh nahi aaya ki iska matlab kya tha.
-
 157. Same Aarav watching his double slowly walk backward into darkness, fog, cinematic realism | Double peeche hata... aur darkness mein disappear ho gaya.
-
 158. Same Aarav running upstairs, flashlight, empty staircase, cinematic horror | Aarav uske peeche bhaaga... lekin wahan koi nahi tha.
-
 159. Same Aarav reaching upper floor, dark corridor, doors closed, fog | Ab poora ghar bilkul silent tha.
-
 160. Same Aarav finding a small room with bright light underneath its door, dark hallway | Sirf ek room ke neeche se light aa rahi thi.
-
 161. Same Aarav opening the glowing room door, old office, desk lamp, mysterious papers | Desk par dozens of papers neatly arranged the.
-
 162. Same Aarav approaching desk, seeing his name written on papers, cinematic horror | Har paper par sirf ek naam tha... Aarav.
-
 163. Same Aarav reading a document describing his arrival, shocked expression, dark office | Paper mein likha tha ki Aarav aaj raat exactly yahan aayega.
-
 164. Same Aarav staring at document, trembling hands, desk lamp, dark room | Lekin document par date 1996 ki thi.
-
 165. Same Aarav discovering another document, old paper, mysterious handwriting, cinematic realism | Dusre paper mein likha tha... “Woh mirror ke through enter karega.”
-
 166. Same Aarav looking toward an old mirror in office, dim light, eerie reflection | Aarav ne dheere se mirror ki taraf dekha.
-
 167. Same Aarav standing before mirror, his reflection missing again, dark office | Is baar mirror mein uska reflection bilkul nahi tha.
-
 168. Same Aarav stepping closer to mirror, mysterious dark hallway visible inside reflection | Mirror ke andar ek alag hallway dikh rahi thi.
-
 169. Same Aarav touching mirror surface, strange glowing ripples, cinematic horror | Glass paani ki tarah hilne laga.
-
 170. Same Aarav pulling his hand away from mirror, shocked expression, dark office | Usne haath turant peeche kheench liya.
-
 171. Same Aarav hearing whispering from inside mirror, cold blue light, cinematic horror | Mirror ke andar se hundreds of whispers aane lage.
-
 172. Same Aarav covering his ears, frightened expression, dark office, dramatic lighting | Har awaaz uska naam le rahi thi.
-
 173. Same Aarav looking at mirror as several shadowy figures appear behind glass, eerie cinematic realism | Mirror ke andar bahut saari parchaiyan jama ho gayi.
-
 174. Same Aarav stepping backward, shadows pressing against mirror, dark room | Ek parchai ne glass par haath rakha.
-
 175. Same Aarav staring at handprint appearing on mirror, flashlight, tense atmosphere | Glass par ek haath ka nishaan ban gaya.
-
 176. Same Aarav running out of office, dark hallway, dramatic motion, cinematic horror | Aarav ne office se bhaagna shuru kar diya.
-
 177. Same Aarav racing through mansion corridor, doors opening automatically, fog, cinematic realism | Ab ghar jaise usse rokne ki koshish kar raha tha.
-
 178. Same Aarav reaching a large staircase, mysterious red light from below, dark atmosphere | Neeche se ek strange light aa rahi thi.
-
 179. Same Aarav descending toward red-lit basement, flashlight, shadows, cinematic horror | Usse laga shayad wahi exit hoga.
-
 180. Same Aarav entering a hidden underground room, stone walls, candles, mysterious symbols, realistic cinematic | Basement ke neeche ek secret room tha.
-
 181. Same Aarav staring at a huge circular symbol on floor, candles around it, dark atmosphere | Floor par ek bada circle bana hua tha.
-
 182. Same Aarav discovering dozens of old clocks around the room, all showing 2:13, cinematic horror | Room ki har clock 2:13 par ruki thi.
-
 183. Same Aarav standing among stopped clocks, frightened expression, candlelight | Aarav samajh gaya... 2:13 is ghar ka secret tha.
-
 184. Same Aarav noticing one clock suddenly moving, dark room, eerie lighting | Tab ek clock ki needle chalne lagi.
-
 185. Same Aarav staring at clock as it reaches 2:14, cinematic horror | Clock ne 2:14 dikhaya.
-
 186. Same Aarav hearing every door in mansion slam simultaneously, underground room, dramatic cinematic | Puri mansion mein ek saath doors band hone lage.
-
 187. Same Aarav looking upward as ceiling trembles slightly, candles flickering, cinematic horror | Ghar jaise zinda ho gaya tha.
-
 188. Same Aarav standing inside secret room as candle flames suddenly go out, complete darkness | Saari candles ek saath bujh gayi.
-
 189. Same Aarav holding flashlight in complete darkness, narrow beam revealing empty room | Aarav ne flashlight on ki... lekin battery full hote hue bhi light dim thi.
-
 190. Same Aarav seeing a silhouette behind him through flashlight reflection, dark room | Light ke edge par ek silhouette khadi thi.
-
 191. Same Aarav turning around quickly, empty room, cinematic horror | Woh palta... silhouette gayab thi.
-
 192. Same Aarav looking down and discovering a key on the floor, mysterious old key, flashlight | Floor par ek purani key padi thi.
-
 193. Same Aarav picking up the key, examining strange number 14 engraved on it | Key par sirf number 14 engraved tha.
-
 194. Same Aarav remembering locked door 14, dark basement, tense expression | Aarav ko upar wala locked door yaad aa gaya.
-
 195. Same Aarav running upstairs with key, dark mansion corridor, cinematic motion | Woh key lekar seedha upper floor ki taraf bhaaga.
-
 196. Same Aarav standing before door 14, holding old key, dark hallway, fog | Door ab khud halka sa khula hua tha.
-
 197. Same Aarav pushing door 14 open, seeing a completely empty white room, eerie silence | Andar koi furniture nahi tha... sirf ek chair thi.
-
 198. Same Aarav entering white room, identical chair in center, huge dark mirror on wall, cinematic horror | Chair par ek diary rakhi thi.
-
 199. Same Aarav opening diary inside room 14, first page showing his name and today's date, dramatic lighting | Diary ki first line thi... “Aarav, agar tum yahan tak pahunch gaye ho, toh ab tumhe sach dikhana padega.”
-
 200. Same Aarav standing before the huge dark mirror, diary in hand, identical reflection smiling, fog surrounding him, epic cinematic horror ending | Aarav ne mirror mein dekha... aur is baar reflection ne kaha, “Ab tum meri jagah ho.”
