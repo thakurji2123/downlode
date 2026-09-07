@@ -1,0 +1,65 @@
+name: Ultimate Video Factory & Auto Upload
+
+on: 
+  workflow_dispatch: 
+  schedule:
+    - cron: '0 0 * * *'   
+    - cron: '30 13 * * *' 
+
+jobs:
+  run-bots:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        machine_id: [1, 2, 3, 4, 5]
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with: { python-version: '3.10' }
+    - run: pip install playwright requests
+    - run: playwright install chromium
+    - run: python bot.py --machine_id ${{ matrix.machine_id }} --total_machines 5
+    
+    - uses: actions/upload-artifact@v4
+      with:
+        name: raw_images_machine_${{ matrix.machine_id }}
+        path: ai_generated_images/
+
+  merge-and-upload:
+    needs: run-bots 
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with: { python-version: '3.10' }
+
+    - name: Install System Dependencies for Text Overlays
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y imagemagick
+        sudo sed -i 's/<policy domain="path" rights="none" pattern="@\*"/<policy domain="path" rights="read|write" pattern="@\*"/g' /etc/ImageMagick-6/policy.xml
+      
+    - name: Install Python Dependencies
+      run: pip install "moviepy==1.0.3" Pillow==9.5.0 edge-tts requests google-api-python-client google-auth-httplib2 google-auth-oauthlib
+
+    - name: Create folder for downloading
+      run: mkdir -p ai_generated_images
+
+    - name: Download all raw images
+      uses: actions/download-artifact@v4
+      with:
+        path: ai_generated_images/
+        merge-multiple: true
+
+    - name: Run Master Merging Script
+      run: python merge.py
+
+    - name: Decode Base64 Token and Create File
+      env:
+        YOUTUBE_B64_TOKEN: ${{ secrets.YOUTUBE_TOKEN }}
+      run: |
+        echo "$YOUTUBE_B64_TOKEN" | base64 --decode > token.json
+        echo "✅ Token successfully decoded"
+
+    - name: Upload Video to YouTube
+      run: python youtube_upload.py
