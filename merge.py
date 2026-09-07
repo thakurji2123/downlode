@@ -99,12 +99,13 @@ async def main():
         # Image processing & Color Grading
         img_clip = ImageClip(img_path).set_duration(duration)
         
-        # 2. Moviepy ke resize method mein 'lanczos' resampler specify kar diya
-        img_clip = img_clip.resize(height=1080, resampling='lanczos') 
+        # 🟢 FIX: Yahan se 'resampling' word hata diya hai
+        img_clip = img_clip.resize(height=1080) 
         img_clip = img_clip.fx(vfx.colorx, 1.15).fx(vfx.lum_contrast, lum=5, contrast=0.1).set_position("center")
         
-        if i % 2 == 0: img_clip = img_clip.resize(resize_func_zoomin, resampling='lanczos')
-        else: img_clip = img_clip.resize(resize_func_zoomout, resampling='lanczos')
+        # 🟢 FIX: Yahan se bhi 'resampling' hata diya hai
+        if i % 2 == 0: img_clip = img_clip.resize(resize_func_zoomin)
+        else: img_clip = img_clip.resize(resize_func_zoomout)
             
         bg_clip = ColorClip(size=(1920, 1080), color=(0, 0, 0)).set_duration(duration)
         
