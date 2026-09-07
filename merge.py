@@ -1,7 +1,11 @@
 import PIL
 from PIL import Image
+
+# 1. Pillow 10+ Compatibility Patch (MoviePy se pehle load hona zaroori hai)
 if not hasattr(Image, 'ANTIALIAS'):
     Image.ANTIALIAS = Image.Resampling.LANCZOS
+if not hasattr(Image, 'CUBIC'):
+    Image.CUBIC = Image.Resampling.BICUBIC
 
 import os
 import asyncio
@@ -94,11 +98,13 @@ async def main():
 
         # Image processing & Color Grading
         img_clip = ImageClip(img_path).set_duration(duration)
-        img_clip = img_clip.resize(height=1080) 
+        
+        # 2. Moviepy ke resize method mein 'lanczos' resampler specify kar diya
+        img_clip = img_clip.resize(height=1080, resampling='lanczos') 
         img_clip = img_clip.fx(vfx.colorx, 1.15).fx(vfx.lum_contrast, lum=5, contrast=0.1).set_position("center")
         
-        if i % 2 == 0: img_clip = img_clip.resize(resize_func_zoomin)
-        else: img_clip = img_clip.resize(resize_func_zoomout)
+        if i % 2 == 0: img_clip = img_clip.resize(resize_func_zoomin, resampling='lanczos')
+        else: img_clip = img_clip.resize(resize_func_zoomout, resampling='lanczos')
             
         bg_clip = ColorClip(size=(1920, 1080), color=(0, 0, 0)).set_duration(duration)
         
