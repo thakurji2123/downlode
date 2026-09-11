@@ -20,7 +20,7 @@ MAX_VIDEO_DURATION = 14 * 60  # STRICT LIMIT: 14 Minutes (840 Seconds)
 # ==========================================
 
 async def generate_voiceover(text, output_file):
-    communicate = edge_tts.Communicate(text, "en-US-ChristopherNeural", rate="+5%", pitch="-5Hz", volume="+30%")
+    communicate = edge_tts.Communicate(text, "hi-IN-MadhurNeural", rate="+5%", pitch="-5Hz", volume="+30%")
     await communicate.save(output_file)
 
 def resize_func_zoomin(t): return 1 + 0.02 * t  
