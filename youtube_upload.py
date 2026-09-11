@@ -1,51 +1,35 @@
+# youtube_upload.py
 import os
-import random
+import json
 import googleapiclient.discovery
 from google.oauth2.credentials import Credentials
 from googleapiclient.http import MediaFileUpload
 
 VIDEO_FILE = "Final_Long_Educational_Video.mp4"
-CATEGORY_ID = "24" 
-
-# ==========================================
-# 🎲 DYNAMIC UNIQUE TITLE/DESC GENERATOR
-# ==========================================
-
-def generate_unique_metadata():
-    # In tukdon ko jod kar title banega (Taaki kabhi copy/duplicate na ho)
-    hooks = ["Rula dene wali kahani", "Dil chhu lene wali baat", "Zindagi ki sachai", "Ek sachi seekh", "Aisa kisi ke sath na ho", "Rongte khade kar dene wali story"]
-    topics = ["Pyaar ka dard", "Rishton ki ehmiyat", "Akelepan ka safar", "Maa Baap ka pyaar", "Dhoka aur vishwas", "Kismat ka khel"]
-    emojis = ["💔", "🥺", "😭", "❤️", "✨", "🙏", "😔"]
-
-    # Generate Unique Title: "Rula dene wali kahani - Pyaar ka dard 💔"
-    unique_title = f"{random.choice(hooks)} - {random.choice(topics)} {random.choice(emojis)}"
-
-    # Generate Unique Description
-    desc_intros = [
-        "Agar aapne ye video nahi dekhi, toh bohot kuch miss kar doge.", 
-        "Dosto is kahani ko sunkar aapke bhi aansu aa jayenge.", 
-        "Zindagi me kabhi kabhi aisi seekh milti hai jo humesha yaad rehti hai.",
-        "Kahaani jo aapke dil ko chhu jayegi, end tak zaroor dekhna."
-    ]
-    desc_ctas = [
-        "\n\nVideo pasand aaye toh Like aur Subscribe zaroor karein! 🙏", 
-        "\n\nApne dosto ke sath is seekh ko share karein aur Channel ko subscribe karna na bhoolein! ❤️"
-    ]
-    tags = "\n\n#EmotionalStory #HindiStories #LifeLessons #Trending #HeartTouching #SadStory"
-
-    unique_description = f"{random.choice(desc_intros)} {random.choice(desc_ctas)} {tags}"
-    
-    return unique_title, unique_description
+META_FILE = "metadata.json"
+CATEGORY_ID = "22" # People & Blogs
 
 def upload_video():
     if not os.path.exists(VIDEO_FILE):
-        print(f"❌ Error: {VIDEO_FILE} not found!")
+        print("❌ Video file not found!")
+        return
+        
+    if not os.path.exists(META_FILE):
+        print("❌ Metadata file not found!")
         return
 
-    # Random Function call kiya
-    selected_title, selected_desc = generate_unique_metadata()
+    # Load Gemini Generated Metadata
+    with open(META_FILE, "r", encoding="utf-8") as f:
+        meta_data = json.load(f)
 
-    print(f"📌 FINAL TITLE: {selected_title}")
+    title = meta_data.get("title", "A Message From God 🙏")
+    
+    # Adding AI disclaimer in description (Required by YouTube Policy for AI content)
+    description = meta_data.get("description", "") + "\n\n[Disclosure: The visuals and voiceover in this video were synthetically generated using AI technology to bring this story to life.]"
+    
+    tags = [tag.strip() for tag in meta_data.get("tags", "").split(",")]
+
+    print(f"📌 UPLOADING: {title}")
     
     creds = Credentials.from_authorized_user_file('token.json', ['https://www.googleapis.com/auth/youtube.upload'])
     youtube = googleapiclient.discovery.build("youtube", "v3", credentials=creds)
@@ -53,21 +37,26 @@ def upload_video():
     request_body = {
         "snippet": {
             "categoryId": CATEGORY_ID,
-            "title": selected_title,
-            "description": selected_desc,
-            # Tags ko array me convert kiya
-            "tags": ["Hindi Stories", "Emotional", "Moral Story", "Trending", "Life Lesson"]
+            "title": title[:100],
+            "description": description[:5000],
+            "tags": tags[:15]
         },
         "status": {
             "privacyStatus": "public", 
-            "selfDeclaredMadeForKids": False
+            "selfDeclaredMadeForKids": False,
+            # YouTube API abhi 'AlteredContent' field direct support nahi karta payload mein, 
+            # isliye humne description mein transparently declare kar diya hai.
         }
     }
 
     media_file = MediaFileUpload(VIDEO_FILE, chunksize=-1, resumable=True, mimetype="video/mp4")
     request = youtube.videos().insert(part="snippet,status", body=request_body, media_body=media_file)
-    response = request.execute()
-    print(f"✅ VIDEO SUCCESSFULLY UPLOADED! Link: https://youtu.be/{response['id']}")
+    
+    try:
+        response = request.execute()
+        print(f"✅ VIDEO SUCCESSFULLY UPLOADED! Link: https://youtu.be/{response['id']}")
+    except Exception as e:
+        print(f"❌ Upload Failed: {e}")
 
 if __name__ == "__main__":
     upload_video()
