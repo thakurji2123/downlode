@@ -3,17 +3,56 @@ name: Ultimate Video Factory & Auto Upload
 on: 
   workflow_dispatch: 
   schedule:
-    - cron: '0 0 * * *'   
-    - cron: '30 13 * * *' 
+    - cron: '30 1 * * *'   # Runs at 7:00 AM IST daily
+    - cron: '0 15 * * *'   # Runs at 8:30 PM IST daily
 
 jobs:
+  prepare-prompts:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 👈 Required to commit topics.txt back to Github
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with: { python-version: '3.10' }
+      - name: Install Gemini API
+        run: pip install google-generativeai
+      
+      - name: Run Gemini Script (Generate Prompts & Delete Topic)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python generate_prompts.py
+        
+      - name: Commit Updated topics.txt back to Repo
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add topics.txt
+          git commit -m "🤖 Auto-removed used topic" || echo "No changes to commit"
+          git push
+
+      - name: Save Prompts & Metadata for Next Job
+        uses: actions/upload-artifact@v4
+        with:
+          name: gemini_data
+          path: |
+            prompts.txt
+            metadata.json
+
   run-bots:
+    needs: prepare-prompts # 👈 Wait for prompts to be ready
     runs-on: ubuntu-latest
     strategy:
       matrix:
         machine_id: [1, 2, 3, 4, 5]
     steps:
     - uses: actions/checkout@v3
+    
+    - name: Download Generated Prompts
+      uses: actions/download-artifact@v4
+      with:
+        name: gemini_data
+        
     - uses: actions/setup-python@v4
       with: { python-version: '3.10' }
     - run: pip install playwright requests
@@ -42,14 +81,16 @@ jobs:
     - name: Install Python Dependencies
       run: pip install "moviepy==1.0.3" Pillow==9.5.0 edge-tts requests google-api-python-client google-auth-httplib2 google-auth-oauthlib
 
-    - name: Create folder for downloading
-      run: mkdir -p ai_generated_images
-
     - name: Download all raw images
       uses: actions/download-artifact@v4
       with:
         path: ai_generated_images/
         merge-multiple: true
+
+    - name: Download Gemini Metadata
+      uses: actions/download-artifact@v4
+      with:
+        name: gemini_data
 
     - name: Run Master Merging Script
       run: python merge.py
