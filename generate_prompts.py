@@ -18,7 +18,7 @@ def generate_with_retry(prompt, max_retries=6):
     for attempt in range(max_retries):
         key_index = attempt % len(API_KEYS)
         genai.configure(api_key=API_KEYS[key_index])
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-3.6-flash')
         try:
             print(f"📡 Trying API Key #{key_index + 1}...")
             response = model.generate_content(prompt)
