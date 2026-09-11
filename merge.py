@@ -20,10 +20,23 @@ INTRO_HOOK_TEXT = "दोस्तो, आज की कहानी आपक�
 MAX_VIDEO_DURATION = 14 * 60  
 # ==========================================
 
+# 🎙️ CRASH-PROOF VOICEOVER FUNCTION (With Retry System)
 async def generate_voiceover(text, output_file):
-    # VOICE SPEED +15% aur PITCH change kiya hai clarity & retention ke liye
-    communicate = edge_tts.Communicate(text, "hi-IN-MadhurNeural", rate="+15%", pitch="+2Hz", volume="+30%")
-    await communicate.save(output_file)
+    # Agar text khali hai ya sirf symbols hain toh ignore karega
+    if not text or len(text.strip()) < 2:
+        return False
+        
+    for attempt in range(3):
+        try:
+            communicate = edge_tts.Communicate(text, "hi-IN-MadhurNeural", rate="+15%", pitch="+2Hz", volume="+30%")
+            await communicate.save(output_file)
+            return True
+        except Exception as e:
+            print(f"⚠️ Voiceover Network Drop (Attempt {attempt+1}/3). Retrying in 2s...")
+            await asyncio.sleep(2)
+            
+    print(f"❌ Failed to generate audio for text: {text[:20]}...")
+    return False
 
 def create_dynamic_captions(text, duration):
     if not text: return []
@@ -43,7 +56,7 @@ def create_dynamic_captions(text, duration):
     return text_clips
 
 async def main():
-    print("🎬 HINDI AUDIENCE VIDEO MAKER STARTED (WITH 20x DYNAMIC TRANSITIONS)...")
+    print("🎬 HINDI AUDIENCE VIDEO MAKER STARTED (CRASH-PROOF)...")
     
     intro_audio_path = "intro_voice.mp3"
     await generate_voiceover(INTRO_HOOK_TEXT, intro_audio_path)
@@ -78,12 +91,14 @@ async def main():
         if not os.path.exists(img_path) or os.path.getsize(img_path) < 1024: 
             continue
             
-        target_audio = intro_audio_path if i == 0 else audio_path
-        text_to_speak = INTRO_HOOK_TEXT if i == 0 else vo_text
-        
+        # 🎙️ AUDIO GENERATION WITH SAFETY
         if i > 0 and vo_text: 
-            await generate_voiceover(vo_text, audio_path)
-        
+            success = await generate_voiceover(vo_text, audio_path)
+            if not success:
+                print(f"⏭️ Skipping Scene {v_num} due to Audio failure.")
+                continue # Skip clip if audio fails
+                
+        target_audio = intro_audio_path if i == 0 else audio_path
         if not os.path.exists(target_audio): continue
 
         try:
@@ -94,7 +109,6 @@ async def main():
             img_clip = ImageClip(img_path).set_duration(duration)
             img_clip = img_clip.fx(vfx.colorx, 1.15).fx(vfx.lum_contrast, lum=5, contrast=0.1)
             
-            # 🎥 1. RANDOM CAMERA MOTION ENGINE (4 Types)
             motion_type = random.choice(["zoom_in", "zoom_out", "pan_left", "pan_right"])
             
             if motion_type == "zoom_in":
@@ -112,29 +126,27 @@ async def main():
             video_clip = CompositeVideoClip([bg_clip, img_clip] + dynamic_captions)
             video_clip = video_clip.set_audio(audio)
             
-            # 🔀 2. RANDOM TRANSITION ENGINE (5 Types)
             if i > 0: 
                 trans_type = random.choice(["hardcut", "crossfade_slow", "crossfade_fast", "fadein", "fade_out_in"])
-                if trans_type == "crossfade_slow":
-                    video_clip = video_clip.crossfadein(0.8)
-                elif trans_type == "crossfade_fast":
-                    video_clip = video_clip.crossfadein(0.3)
-                elif trans_type == "fadein":
-                    video_clip = video_clip.fadein(0.6)
-                elif trans_type == "fade_out_in":
-                    video_clip = video_clip.fadein(0.4).fadeout(0.4)
-                # agar 'hardcut' aaya toh instant change hoga (No fade)
+                if trans_type == "crossfade_slow": video_clip = video_clip.crossfadein(0.8)
+                elif trans_type == "crossfade_fast": video_clip = video_clip.crossfadein(0.3)
+                elif trans_type == "fadein": video_clip = video_clip.fadein(0.6)
+                elif trans_type == "fade_out_in": video_clip = video_clip.fadein(0.4).fadeout(0.4)
+            else:
+                trans_type = "Start"
             
             final_clips.append(video_clip)
-            print(f"✅ Scene {v_num} | Motion: {motion_type} | Transition: {trans_type if i > 0 else 'Start'}")
+            print(f"✅ Scene {v_num} | Motion: {motion_type} | Transition: {trans_type}")
             
         except Exception as e:
+            print(f"⚠️ MoviePy Error on Scene {v_num}: {e}")
             continue
 
-    if not final_clips: return
+    if not final_clips: 
+        print("❌ No clips were generated.")
+        return
 
     print("⏳ Merging all clips, please wait...")
-    # Thoda padding diya hai taaki crossfades smooth chalein
     final_video = concatenate_videoclips(final_clips, method="compose", padding=-0.4)
     
     watermark = TextClip(f" {CHANNEL_NAME} ", fontsize=45, color='white', font="Arial-Bold", bg_color='black')
@@ -145,7 +157,6 @@ async def main():
 
     final_video = CompositeVideoClip([final_video, watermark, sub_text])
 
-    # BACKGROUND MUSIC 
     bg_music_path = "bg.mp3" 
     if os.path.exists(bg_music_path):
         bg_clip = AudioFileClip(bg_music_path).fx(afx.volumex, 0.05).fx(afx.audio_loop, duration=final_video.duration)
