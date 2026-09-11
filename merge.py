@@ -20,9 +20,8 @@ INTRO_HOOK_TEXT = "दोस्तो, आज की कहानी आपक�
 MAX_VIDEO_DURATION = 14 * 60  
 # ==========================================
 
-# 🎙️ CRASH-PROOF VOICEOVER FUNCTION (With Retry System)
+# 🎙️ CRASH-PROOF VOICEOVER FUNCTION 
 async def generate_voiceover(text, output_file):
-    # Agar text khali hai ya sirf symbols hain toh ignore karega
     if not text or len(text.strip()) < 2:
         return False
         
@@ -32,10 +31,9 @@ async def generate_voiceover(text, output_file):
             await communicate.save(output_file)
             return True
         except Exception as e:
-            print(f"⚠️ Voiceover Network Drop (Attempt {attempt+1}/3). Retrying in 2s...")
+            print(f"⚠️ Voiceover Drop (Attempt {attempt+1}/3). Retrying...")
             await asyncio.sleep(2)
             
-    print(f"❌ Failed to generate audio for text: {text[:20]}...")
     return False
 
 def create_dynamic_captions(text, duration):
@@ -56,7 +54,7 @@ def create_dynamic_captions(text, duration):
     return text_clips
 
 async def main():
-    print("🎬 HINDI AUDIENCE VIDEO MAKER STARTED (CRASH-PROOF)...")
+    print("🎬 HINDI AUDIENCE VIDEO MAKER STARTED...")
     
     intro_audio_path = "intro_voice.mp3"
     await generate_voiceover(INTRO_HOOK_TEXT, intro_audio_path)
@@ -91,14 +89,16 @@ async def main():
         if not os.path.exists(img_path) or os.path.getsize(img_path) < 1024: 
             continue
             
-        # 🎙️ AUDIO GENERATION WITH SAFETY
         if i > 0 and vo_text: 
             success = await generate_voiceover(vo_text, audio_path)
             if not success:
-                print(f"⏭️ Skipping Scene {v_num} due to Audio failure.")
-                continue # Skip clip if audio fails
+                continue 
                 
         target_audio = intro_audio_path if i == 0 else audio_path
+        
+        # ⚠️ YEH LINE MISSING THI PICHLE CODE MEIN! 
+        text_to_speak = INTRO_HOOK_TEXT if i == 0 else vo_text  
+        
         if not os.path.exists(target_audio): continue
 
         try:
