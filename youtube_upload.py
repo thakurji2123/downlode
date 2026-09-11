@@ -7,7 +7,7 @@ from googleapiclient.http import MediaFileUpload
 
 VIDEO_FILE = "Final_Long_Educational_Video.mp4"
 META_FILE = "metadata.json"
-CATEGORY_ID = "22" # People & Blogs
+CATEGORY_ID = "24" # People & Blogs
 
 def upload_video():
     if not os.path.exists(VIDEO_FILE):
