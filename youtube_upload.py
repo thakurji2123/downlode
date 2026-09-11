@@ -1,4 +1,3 @@
-# youtube_upload.py
 import os
 import json
 import googleapiclient.discovery
@@ -7,7 +6,7 @@ from googleapiclient.http import MediaFileUpload
 
 VIDEO_FILE = "Final_Long_Educational_Video.mp4"
 META_FILE = "metadata.json"
-CATEGORY_ID = "24" # People & Blogs
+CATEGORY_ID = "24" # 24 = Entertainment (Aap apne hisab se badal sakte ho)
 
 def upload_video():
     if not os.path.exists(VIDEO_FILE):
@@ -18,15 +17,15 @@ def upload_video():
         print("❌ Metadata file not found!")
         return
 
-    # Load Gemini Generated Metadata
     with open(META_FILE, "r", encoding="utf-8") as f:
         meta_data = json.load(f)
 
-    title = meta_data.get("title", "A Message From God 🙏")
+    title = meta_data.get("title", "रहस्यमयी कहानी 😱")
     
-    # Adding AI disclaimer in description (Required by YouTube Policy for AI content)
-    description = meta_data.get("description", "") + "\n\n[Disclosure: The visuals and voiceover in this video were synthetically generated using AI technology to bring this story to life.]"
+    # ⚠️ AI ALTERED CONTENT DISCLAIMER (Required by YouTube Policy)
+    ai_disclaimer = "⚠️ [Altered Content]: इस वीडियो में इस्तेमाल किए गए विजुअल्स और आवाज़ AI (Artificial Intelligence) द्वारा बनाए गए हैं।\n\n"
     
+    description = ai_disclaimer + meta_data.get("description", "")
     tags = [tag.strip() for tag in meta_data.get("tags", "").split(",")]
 
     print(f"📌 UPLOADING: {title}")
@@ -43,9 +42,8 @@ def upload_video():
         },
         "status": {
             "privacyStatus": "public", 
-            "selfDeclaredMadeForKids": False,
-            # YouTube API abhi 'AlteredContent' field direct support nahi karta payload mein, 
-            # isliye humne description mein transparently declare kar diya hai.
+            "selfDeclaredMadeForKids": False
+            # API me 'AlteredContent' ka direct tick box abhi nahi hai, isliye humne description me dala hai.
         }
     }
 
