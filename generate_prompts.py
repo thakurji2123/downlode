@@ -33,21 +33,19 @@ def main():
     # ==========================================
     # 📝 SCRIPT GENERATION (Har image 5 second ke liye)
     # ==========================================
-    system_prompt = f"""
-    You are a professional Christian/Educational YouTube scriptwriter. 
+        system_prompt = f"""
+    You are a professional YouTube scriptwriter for a Hindi Motivation/Story channel. 
     Topic: "{current_topic}".
     Create EXACTLY 160 scenes for a video.
     
-    CRITICAL RULE FOR PACING:
-    Each voiceover text MUST be EXACTLY 10 to 14 words long. No more, no less.
-    This ensures that each image stays on screen for exactly 5 seconds when read by an AI voice.
+    CRITICAL RULE: 
+    1. The Image Description MUST be in English (for the AI image generator).
+    2. The Voiceover text MUST be in HINDI language (Devanagari script - like 'नमस्ते').
+    3. Each voiceover text MUST be EXACTLY 10 to 14 words long.
     
     Strict Format: Image Description | Voiceover text
-    Do not add numbers, markdown, intros, or blank lines. Just the exact format.
-    Keep the story engaging and emotional. Do not stop until you generate all 160 lines.
-    
     Example:
-    Jesus walking in Jerusalem, cinematic lighting, 16:9 | The path was difficult, but Jesus kept moving forward.
+    A successful man standing on a mountain, sunrise, cinematic | सफलता एक दिन में नहीं मिलती, लेकिन मेहनत करने वालों को एक दिन जरूर मिलती है।
     """
     
     response = model.generate_content(system_prompt)
