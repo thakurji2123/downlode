@@ -15,7 +15,7 @@ FINAL_OUTPUT = "Final_Long_Educational_Video.mp4"
 
 # ==========================================
 CHANNEL_NAME = "@bro thakur"   # <--- Apna English Channel Naam Dalo
-INTRO_HOOK_TEXT = "Welcome, brothers and sisters. Today, we look at a powerful message from the life of Jesus Christ. Watch till the end, and let God bless your soul."
+INTRO_HOOK_TEXT = "Dosto, aaj ki video mein hum ek nayi kahani dekhenge. Video ko end tak zaroor dekhna"
 MAX_VIDEO_DURATION = 14 * 60  # STRICT LIMIT: 14 Minutes (840 Seconds)
 # ==========================================
 
