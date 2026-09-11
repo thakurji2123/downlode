@@ -33,6 +33,7 @@ def main():
     # ==========================================
     # 📝 SCRIPT GENERATION (Har image 5 second ke liye)
     # ==========================================
+   
     system_prompt = f"""
     You are a professional YouTube scriptwriter for a Hindi Motivation/Story channel. 
     Topic: "{current_topic}".
