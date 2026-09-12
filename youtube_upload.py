@@ -23,7 +23,11 @@ def upload_video():
     title = meta_data.get("title", "रहस्यमयी कहानी 😱")
     
     # ⚠️ AI ALTERED CONTENT DISCLAIMER (Required by YouTube Policy)
-    ai_disclaimer = "⚠️ [Altered Content]: इस वीडियो में इस्तेमाल किए गए विजुअल्स और आवाज़ AI (Artificial Intelligence) द्वारा बनाए गए हैं।\n\n"
+    ai_disclaimer = (
+        "यह एक ओरिजिनल कहानी है जिसे हमारी टीम द्वारा बहुत मेहनत से लिखा, डायरेक्ट और एडिट किया गया है। "
+        "कहानी को विजुअली शानदार बनाने के लिए हमने क्रिएटिव एडिटिंग और AI (AI visuals & voice) का इस्तेमाल किया है। "
+        "हमारा मकसद आपको बेहतरीन एंटरटेनमेंट देना है।\n\n"
+    )
     
     description = ai_disclaimer + meta_data.get("description", "")
     tags = [tag.strip() for tag in meta_data.get("tags", "").split(",")]
